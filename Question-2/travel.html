@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="travel.css">
+    <title>Travel Agency</title>
+</head>
+<body>
+    <script type="text/javascript">  
+
+
+        var index = 1;  
+        displayslides(index);  
+    
+        function nextslide(n) {  
+            displayslides(index = index+n);  
+        }  
+    
+        function currentSlide(n) {  
+            displayslides(index = n);  
+        }  
+    
+        function displayslides(n) {  
+            var i;  
+            var slides = document.getElementsByClassName("slide");  
+            if (n > slides.length) {index = 1 }  
+            if (n < 1) { index = slides.length }  
+            for (i = 0; i < slides.length; i++) {  
+                slides[i].style.display = "none";  
+            }  
+            slides[index - 1].style.display = "block";  
+        }  
+    
+    
+    </script>
+    
+    
+    <header class="header">
+        
+        <div class="left">
+           
+           <div>Travel the Beauty</div>
+        </div>
+        
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">AboutUs</a></li>
+                <li><a href="#">Tour&Travel</a></li>
+                <li><a href="#">Packages</a></li>
+                <li><a href="#">Place</a></li>
+            </ul>
+
+
+        </div>
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+
+        </div>
+
+    </header>
+    <div class="container fade">
+        <div class="slide fade"><img src="tr1.jpg"></div>
+        <div class="slide fade"><img src="tr2.jpg"></div>
+        <div class="slide fade"><img src="tr3.jpg"></div>
+        <div class="slide fade"><img src="tr4.jpg"></div>
+        
+        <a class="PREVIOUS" onclick="nextslide(1)">PREVIOUS</a>
+        <a class="NEXT" onclick="nextslide(1)">NEXT</a>
+        
+        </div>
+    
+</body>
+</html>

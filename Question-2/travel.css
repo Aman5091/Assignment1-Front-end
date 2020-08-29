@@ -1,0 +1,162 @@
+body
+        {
+            margin: 0px;
+            padding: 0px;
+            color:darkslategrey;
+            background: url('tour.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: sans-serif;
+            font-weight: bold;
+            overflow: hidden; 
+            
+            
+        }
+        .left
+        {
+            position: absolute;
+            left: 60px;
+            top: 20px;
+            /* border: 2px solid red; */
+            display: inline-block;
+
+        }
+        .mid
+        {
+            display: block;
+            width: 45%;
+            margin: 29px auto;
+            /* border: 2px solid green; */
+
+        }
+        .right
+        {
+            position: absolute;
+            right: 34px;
+            top: 40px;
+            display: inline-block;
+            /* border: 2px solid yellow; */
+
+        }
+        .navbar
+        {
+            display: inline-block;
+        }
+        .navbar li 
+        {
+            
+            display: inline-block;
+            font-size: 15px;
+        }
+        .navbar li a
+        {
+            text-decoration: none;
+            color: darkblue;
+            padding: 34px px;
+            font-size: 24px;
+        }
+        .navbar li a
+        {
+            text-decoration: none;
+            color: black;
+            padding: 34px 10px;
+        }
+        
+        .navbar li a:hover
+        {
+            text-decoration: underline;
+            color: brown;
+            font-size: 35px;
+            
+        }
+        .left img
+        {
+            width: 50px;
+            padding-left: 58px;
+            
+        }
+        .left div
+        {
+            text-align: center;
+            line-height: 19px;
+            font-size: 26px;
+
+        }
+        .btn
+        {
+            font-family: 'Rowdies', cursive;
+            margin: 0px 9px;
+            background-color: black;
+            color: white;
+            padding: 4px 14px;
+            border: 2px solid gray;
+            border-radius: 10px;
+            font-size: 16px ;
+            cursor: pointer;
+        }
+        .btn:hover
+        {
+            background-color:rgb(143, 134, 134);
+            transform: scale(1.5);
+        }
+.slide img
+{
+    width: 500px;
+    height:500px;  
+    border-radius: 30%;
+    border:5px double cadetblue;
+    box-shadow: 78px 100px 150px 15px black;
+
+
+}
+.container
+{
+    position: relative;
+    width:500px;
+    margin:auto;
+}
+.PREVIOUS, .NEXT
+{
+
+position: absolute;
+top:15%;
+padding:20px;
+color: white;
+cursor:pointer;
+
+}
+
+.PREVIOUS:hover, .NEXT:hover
+{
+
+background-color: black;
+border-radius: 100%;
+
+
+}
+
+.NEXT{
+
+    right:0;
+}
+
+.fade {
+
+animation-name: fade;
+animation-duration: 2s;
+}
+
+@keyframes fade {
+from {opacity: 0} 
+to {opacity: 1}
+}
+
+@media only screen and (max-width: 760px)
+{
+    .container{
+        position: relative;
+        top: 50%;
+    }
+        
+
+}
