@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirLine Booking</title>
+    <link rel="stylesheet" href="air.css">
+    <link rel="stylesheet" href="air.js">
+</head>
+<body>
+    <script>
+        function validate() {
+            if (document.airline.name.value == "") {
+                alert("Flight name cannot be left blank");
+                document.form.name.focus();
+                return false;
+            }
+            if (document.airline.flightno.value == "") {
+                alert("flight no cannot be left blank");
+                document.airline.flightno.focus();
+                return false;
+            }
+            if (document.airline.datep.value == "") {
+                alert("flight date cannot be left blank");
+                document.airline.datep.focus();
+                return false;
+            }
+            if (document.airline.personal.value == "") {
+                alert("Personal Info cannot be left blank");
+                document.airline.personal.focus();
+                return false;
+            }
+            if (document.airline.passenger.value == "") {
+                alert("Passenger name cannot be left blank");
+                document.airline.passenger.focus();
+                return false;
+            }
+            if (document.airline.gender.value == "") {
+                alert("Gender cannot be left blank");
+                document.airline.gender.focus();
+                return false;
+            }
+            if (document.airline.age.value == "") {
+                alert("Age cannot be left blank");
+                document.airline.age.focus();
+                return false;
+            }
+            if (document.airline.gate.value == "") {
+                alert("gateno cannot be left blank");
+                document.airline.gate.focus();
+                return false;
+            }
+            if (document.airline.se.value == "") {
+                alert("Seat number must be filled");
+                document.airline.se.focus();
+                return false;
+            }
+            if (document.airline.boa.value == "") {
+                alert("Boarding time must be filled");
+                document.airline.boa.focus();
+                return false;
+            }
+            if (document.airline.fro.value == "") {
+                alert("Source must be filled");
+                document.airline.fro.focus();
+                return false;
+            }
+            if (document.airline.to.value == "") {
+                alert("Destination must be filled");
+                document.airline.to.focus();
+                return false;
+            }
+            if (document.airline.Rem.value == "") {
+                alert("Remarks is to be filled ");
+                document.airline.rem.focus();
+                return false;
+            }
+            if (document.airline.obs.value == "") {
+                alert("Observation is to be filled");
+                document.airline.obs.focus();
+                return false;
+            }
+        }
+    </script>
+    <form name="airline" onsubmit="return validate()">
+        <h2>Airline Ticket Template</h2>
+        <div class="form-group">
+            <div class="air">
+                Air Line Name
+            </div>
+            <div class="board">
+                BOARDING PASS
+            </div>
+            <div class="nam">
+                <label for="n">Name Of the class</label>
+                <input type="text" id="n" name="name">
+            </div>
+            <div class="nam">
+                <label for="f">Flight number</label>
+                <input type="number" id="f" name="flightno">
+            </div>
+            <div class="nam">
+                <label for="d">Flight date</label>
+                <input type="date" id="d" name="datep">
+            </div>
+            <div class="nam">
+                <label for="p">Peronal information</label>
+                <input type="text" id="p" name="personal">
+            </div>
+            <div class="nam">
+                <label for="s">passenger name</label>
+                <input type="text" id="s" name="passenger">
+            </div>
+            <div class="gen">
+                <label for="g">Gender</label>
+                <input type="text" id="g" name="gender">
+            </div>
+            <div class="age">
+                <label for="a">Age</label>
+                <input type="number" id="a" name="age">
+            </div>
+            <div class="gate">
+                <label for="g">Gate Number</label>
+                <input type="number" id="g" name="gate">
+            </div>
+            <div class="seat">
+                <label for="s">Seat number</label>
+                <input type="number" id="s" name="se">
+            </div>
+            <div class="nam">
+                <label for="b">Boarding Time</label>
+                <input type="time" id="b" name="boa">
+            </div>
+            <div class="from">
+                <label for="g">From</label>
+                <input type="text" id="g" name="fro">
+            </div>
+            <div class="to">
+                <label for="s">To</label>
+                <input type="text" id="s" name="to">
+            </div>
+            <div class="Rema">
+                <label for="R">Remarks</label>
+                <input type="text" id="R" name="Rem">
+            </div>
+            <div class="Rema">
+                <label for="O">Observation</label>
+                <input type="text" id="O" name="obs">
+            </div>
+        </div>
+        <input type="submit" class="btn" value="Submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box;
+}
+ h2{
+     margin-left: 37%;
+ }
+body{
+    font-family: sans-serif;
+    color: rgb(19, 92, 134);
+    font-size: 10px;
+    font-weight: bold;
+    background-image: url('sky.jpg');
+    background-repeat: no-repeat;
+}
+body h2{
+   font-weight: bold;
+   font-size: 25px;
+}
+ .form-group {
+     width: 500px;
+     margin: 20px 450px;
+     border: 2px solid black;
+ }
+input {
+     border: none;
+}
+.air {
+     padding-top: 10px;
+     padding-bottom: 10px;
+     padding-left: 200px;
+     border: 1px solid black;
+     background-color: skyblue;
+     color: black;
+     font-weight: bold;
+ }
+ .board{
+     padding-top: 10px;
+     padding-bottom: 10px;
+     padding-left: 200px;
+     border: 1px solid black;
+     background-color: rgb(96, 144, 235);
+     color: white;
+     font-weight: bold;
+}
+.nam {
+     display: flex;
+     flex-direction: column;
+     border: 1px solid black;
+     padding-left: 7px;
+}
+.gen {
+     clear: both;
+     float: left;
+     border-right: 1px solid black;
+     height: 40px;
+     border-bottom: 1px solid black;
+     padding-left: 7px;
+     width: 216px;
+ }
+.age {
+     padding-bottom: 20px;
+     border-bottom: 1px solid black;
+     height: 40px;
+ }
+ .gate{
+     clear: both;
+     float: left;
+     border-right: 1px solid black;
+     height: 40px;
+     border-bottom: 1px solid black;
+     width: 216px;
+     padding-left: 7px;
+ }
+ .seat{
+     padding-bottom: 20px;
+     border-bottom: 1px solid black;
+     height: 40px;
+ }
+ .from{
+     clear: both;
+     float: left;
+     border-right: 1px solid black;
+     height: 40px;
+     border-bottom: 1px solid black;
+     width: 215px;
+     padding-left: 7px;
+}
+ .to{
+     padding-bottom: 20px;
+     border-bottom: 1px solid black;
+     height: 40px;
+}
+ .Rema {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding-left: 7px;
+}
+ .Rema input{
+     height: 40px;
+ }
+ .btn{
+     margin-left: 43%;
+     border: 2px solid darkblue;
+     border-radius: 5px;
+     padding: 10px;
+     font-size: 20px;
+     font-family: sans-serif;
+     font-weight: bold;
+     color: darkslategray;
+     cursor: pointer;
+    }
+ .btn:hover{
+    background-color: darkslategrey;
+    color: white;
+    transform: scale(1.2);
+    transition: ease 2s;
+    border: none;
+}
