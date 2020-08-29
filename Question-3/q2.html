@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial of a number</title>
+</head>
+
+<body>
+    <script>
+        function Factorial(num) {
+            var num = document.getElementById("fact").value;
+            var r = 1;
+            if (num == 0) {
+                var y = 1;
+                document.getElementById("answer").value = y;
+                window.alert("the factorial is" + y);
+            }
+            else {
+
+                for (var i = 1; i <= num; i++) {
+                    r = r * i;
+                }
+                document.getElementById("answer").value = r;
+                window.alert("the factorial is" + r);
+            }
+        }
+    </script>
+    <div>
+        <h2>
+            Enter the number
+        </h2>
+        <input type="number" min="0" id="fact" placeholder="Number to be entered">
+        <br>
+        <br>
+        <button type="button" onclick="Factorial()">Find Factorial</button>
+        <br>
+        <br>
+        <input id="answer">
+    </div>
+
+</body>
+
+</html>
